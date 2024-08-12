@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z0-9-]+$"
+    },
+    "PublishDate": {
+      "type": "date"
+    },
+    "Video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Duration": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "configurable": false
+    },
+    "Metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.metadata"
+    }
+  }
+}

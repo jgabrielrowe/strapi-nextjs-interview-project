@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_metadata",
+  "info": {
+    "displayName": "Metadata",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string"
+    },
+    "MetaDescription": {
+      "type": "text"
+    },
+    "SocialMediaPoster": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
